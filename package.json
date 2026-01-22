@@ -1,11 +1,22 @@
 {
-  "name": "hono",
+  "name": "agri-sys",
   "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
-    "hono": "^4.8.9"
+    "@hono/node-server": "^1.19.6",
+    "colors": "^1.4.0",
+    "hono": "^4.10.7",
+    "hono-sessions": "^0.8.0",
+    "mongoose": "^9.0.0",
+    "mongoose-sequence": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
     "typescript": "^5.8.3"
   }
 }
